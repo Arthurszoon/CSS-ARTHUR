@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <style>
+        #container-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            background-color: #ddd;
+            padding: 20px;
+            min-height: 200px;
+        }
+        
+        .flex-item {
+            background-color: #b3d9ff;
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        /* Media query para telas menores que 600px */
+        @media (max-width: 600px) {
+            #container-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Redimensione a janela para menos de 600px</h2>
+    <div id="container-flex">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+    <p>⬇️ Abaixo de 600px, os itens ficam em coluna (vertical)</p>
+</body>
+</html>

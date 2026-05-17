@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7</title>
+    <style>
+        #tabela-dados {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        #tabela-dados th,
+        #tabela-dados td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        #tabela-dados th {
+            background-color: #003366;
+            color: white;
+        }
+        
+        #tabela-dados tr:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+        
+        #tabela-dados tr:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabela-dados">
+        <thead>
+            <tr><th>Nome</th><th>Idade</th><th>Cidade</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Ana</td><td>25</td><td>São Paulo</td></tr>
+            <tr><td>Bruno</td><td>30</td><td>Rio de Janeiro</td></tr>
+            <tr><td>Carla</td><td>22</td><td>Belo Horizonte</td></tr>
+            <tr><td>Daniel</td><td>28</td><td>Curitiba</td></tr>
+            <tr><td>Eduarda</td><td>35</td><td>Porto Alegre</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
